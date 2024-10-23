@@ -3,7 +3,8 @@ import { Code2, LineChart, Github, Linkedin, Mail, Instagram, ArrowDown, Briefca
 import ProjectsGrid from './components/ProjectsGrid';
 import Navbar from './components/Navbar';
 import useScrollSpy from './hooks/useScrollSpy';
-import { techProjects, financeProjects } from './data/projects';
+import { techProjects } from './data/projects';
+import TradeHistoryGalleryCard from './components/TradeHistoryGalleryCard';
 
 const slides = [
   {
@@ -41,15 +42,14 @@ function App() {
   return (
     <div className="min-h-screen text-white bg-gradient-to-b from-gray-900 to-gray-800">
       <Navbar activeSection={activeSection} />
-      
+
       {/* Hero Section */}
       <header id="home" className="relative flex flex-col items-center justify-center min-h-screen px-4 overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              currentSlide === index ? 'opacity-10' : 'opacity-0'
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${currentSlide === index ? 'opacity-10' : 'opacity-0'
+              }`}
             style={{
               backgroundImage: `url('${slide.url}')`,
               backgroundSize: 'cover',
@@ -61,9 +61,8 @@ function App() {
           {slides.map((_, index) => (
             <button
               key={index}
-              className={`w-2 h-2 rounded-full transition-colors ${
-                currentSlide === index ? 'bg-blue-500' : 'bg-gray-400'
-              }`}
+              className={`w-2 h-2 rounded-full transition-colors ${currentSlide === index ? 'bg-blue-500' : 'bg-gray-400'
+                }`}
               onClick={() => setCurrentSlide(index)}
             />
           ))}
@@ -91,14 +90,31 @@ function App() {
           <h2 className="mb-12 text-3xl font-bold text-center md:text-4xl">Software Engineering</h2>
           <div className="grid gap-12 md:grid-cols-2">
             <div className="p-8 transition-transform transform bg-gray-900 rounded-lg hover:scale-105">
-              <Brain className="w-12 h-12 mb-6 text-blue-500" />
-              <h3 className="mb-4 text-xl font-bold">Technical Expertise</h3>
-              <p className="text-gray-400">Specialized in full-stack development with a focus on scalable architecture and cloud solutions.</p>
+              <div className="flex space-x-5 items-center">
+                <Brain className="w-12 h-12 mb-6 text-blue-500" />
+                <h3 className="text-xl font-bold">Technical Expertise</h3>
+              </div>
+              <p className="text-gray-400">
+                Specialized in full-stack development with a:
+                <span className="block my-2 ml-4"><b className='text-gray-300'>-</b> focus on scalable architectures</span>
+                <span className="block my-2 ml-4"><b className='text-gray-300'>-</b> Project Management and </span>
+                <span className="block my-2 ml-4"><b className='text-gray-300'>-</b> modern development practices</span>
+              </p>
             </div>
             <div className="p-8 transition-transform transform bg-gray-900 rounded-lg hover:scale-105">
-              <Code2 className="w-12 h-12 mb-6 text-blue-500" />
-              <h3 className="mb-4 text-xl font-bold">Tech Stack</h3>
-              <p className="text-gray-400">React, Vue, Node.js, TypeScript, Next.js, MQL, Pinescript, TailwindCSS, Bootstrap, SQL, NoSQL, Figma, Photoshop, Project Management and Modern Development Practices.</p>
+              <div className="flex space-x-5 items-center">
+                <Code2 className="w-12 h-12 mb-6 text-blue-500" />
+                <h3 className="text-xl font-bold">Tech Stack</h3></div>
+              <p className="text-gray-400 text-left">
+                <span className="block mb-2"><b className='text-gray-300'>Web App:</b> React, Vue, Node.js, TypeScript, Next.js, JavaScript, HTML, CSS</span>
+                <span className="block mb-2"><b className='text-gray-300'>Trading:</b> MQL, PineScript</span>
+                <span className="block mb-2"><b className='text-gray-300'>Desktop App:</b> C++, C#, Java</span>
+                <span className="block mb-2"><b className='text-gray-300'>Database:</b> MongoDB, MSSQL</span>
+                <span className="block mb-2"><b className='text-gray-300'>Mobile App:</b> Flutter, Dart</span>
+                <span className="block mb-2"><b className='text-gray-300'>Styling:</b> TailwindCSS, Bootstrap</span>
+                <span className="block mb-2"><b className='text-gray-300'>UI/UX:</b> Figma, Adobe Photoshop</span>
+              </p>
+
             </div>
           </div>
           <div className="mt-12 text-center">
@@ -139,7 +155,7 @@ function App() {
               onClick={() => setShowFinanceProjects(!showFinanceProjects)}
               className="inline-flex items-center px-6 py-3 transition-colors bg-green-600 rounded-lg hover:bg-green-700"
             >
-              {showFinanceProjects ? 'Hide Projects' : 'View Projects'}
+              {showFinanceProjects ? 'Hide Trades' : 'View Trades'}
               {showFinanceProjects ? (
                 <ChevronUp className="w-5 h-5 ml-2" />
               ) : (
@@ -147,7 +163,7 @@ function App() {
               )}
             </button>
           </div>
-          {showFinanceProjects && <ProjectsGrid projects={financeProjects} />}
+          {showFinanceProjects && <TradeHistoryGalleryCard />}
         </div>
       </section>
 
@@ -166,7 +182,7 @@ function App() {
       {/* Footer */}
       <footer className="px-4 py-8 bg-gray-900">
         <div className="flex flex-col items-center justify-between max-w-6xl mx-auto md:flex-row">
-          <p className="mb-4 text-gray-400 md:mb-0">© 2024 Anthony Bekoe Bankah. All rights reserved.</p>
+          <p className="mb-4 text-gray-400 md:mb-0">© {new Date().getFullYear()} Bankah. All rights reserved.</p>
           <div className="flex space-x-6">
             <Coffee className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
             <Github className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white" />
