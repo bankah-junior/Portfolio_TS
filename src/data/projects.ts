@@ -92,7 +92,7 @@ export const techProjects = [
       technologies: ['Vue.js', 'Flask', 'MongoDB'],
       githubUrl: 'https://github.com/bankah-junior/investment-research',
       imageUrl: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070'
-    },*/
+    },*/ 
     {
       title: 'Strategy Statistics',
       description: 'Mean reversion strategy with statistical arbitrage',
