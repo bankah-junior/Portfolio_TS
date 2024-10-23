@@ -4,6 +4,7 @@ import ConnectToBuyers from '/public/assets/Projects/ConnectToBuyers.png';
 import BfxCalculator from '/public/assets/Projects/bfx-calculator.png';
 import GP from '/public/assets/Projects/GP.png';
 import Techie from '/public/assets/Projects/Techie.png';
+import FashionWorld from '/public/assets/Projects/FashionWorld.png';
 
 import Trade01 from "/public/assets/Trades/Trade01.png";
 import Trade02 from "/public/assets/Trades/Trade02.png";
@@ -67,6 +68,14 @@ export const techProjects = [
       githubUrl: 'https://github.com/bankah-junior/tech-site',
       liveUrl: 'https://techie-site.netlify.app/',
       imageUrl: Techie,
+    },
+    {
+      title: 'Fashion World',
+      description: "This is a simple React Typescript project to get the familiar with the use of React, Typescript and TailwindCSS",
+      technologies: ['React', 'Typescript', 'TailwindCSS'],
+      githubUrl: 'https://github.com/bankah-junior/React-TS/tree/Fashion-ts',
+      liveUrl: 'https://fashionwrld.netlify.app/',
+      imageUrl: FashionWorld,
     }
   ];
   
