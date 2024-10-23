@@ -140,13 +140,17 @@ function App() {
           <h2 className="mb-12 text-3xl font-bold text-center md:text-4xl">Fund Management</h2>
           <div className="grid gap-12 md:grid-cols-2">
             <div className="p-8 transition-transform transform bg-gray-800 rounded-lg hover:scale-105">
+            <div className="flex space-x-5 items-center">
               <Briefcase className="w-12 h-12 mb-6 text-green-500" />
-              <h3 className="mb-4 text-xl font-bold">Portfolio Management</h3>
+              <h3 className="text-xl font-bold">Portfolio Management</h3>
+            </div>
               <p className="text-gray-400">Strategic asset allocation and risk management for optimal returns.</p>
             </div>
             <div className="p-8 transition-transform transform bg-gray-800 rounded-lg hover:scale-105">
+            <div className="flex space-x-5 items-center">
               <Target className="w-12 h-12 mb-6 text-green-500" />
-              <h3 className="mb-4 text-xl font-bold">Investment Strategy</h3>
+              <h3 className="text-xl font-bold">Investment Strategy</h3>
+            </div>
               <p className="text-gray-400">Data-driven approach combining technical analysis, sentimental analysis with fundamental research.</p>
             </div>
           </div>
