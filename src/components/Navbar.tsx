@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code2, LineChart } from 'lucide-react';
 
 interface NavItem {

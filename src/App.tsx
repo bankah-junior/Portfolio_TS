@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Code2, LineChart, Github, Linkedin, Mail, Instagram, ArrowDown, Briefcase, Brain, Coffee, Target, ChevronDown, ChevronUp } from 'lucide-react';
 import ProjectsGrid from './components/ProjectsGrid';
 import Navbar from './components/Navbar';
