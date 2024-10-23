@@ -27,14 +27,14 @@ export const techProjects = [
       technologies: ['React', 'TailwindCSS'],
       githubUrl: 'https://github.com/bankah-junior/-MindMeld-',
       liveUrl: 'https://mindmeld.netlify.app',
-      imageUrl: '../assets/Projects/MindMeld.PNG',
+      imageUrl: '/src/assets/Projects/MindMeld.PNG',
     },
     {
       title: 'My Recipe',
       description:"With this website, you get to perform the following functionalities: 'Add recipe', 'Delete recipe', 'Search recipe', 'Sort Recipe'. For the repository, visit my Github account.",
       technologies: ['Node.js', 'MongoDB', 'Express.js'],
       githubUrl: 'https://github.com/bankah-junior/My-Recipe',
-      imageUrl: '../assets/Projects/MyRecipe.PNG',
+      imageUrl: '/src/assets/Projects/MyRecipe.PNG',
     },
     {
       title: 'Connect To Buyers',
@@ -42,7 +42,7 @@ export const techProjects = [
       technologies: ['HTML', 'CSS', 'JavaScript'],
       githubUrl: 'https://github.com/bankah-junior/Frontend-Part-2',
       liveUrl: 'https://ctbs.netlify.app',
-      imageUrl: '../assets/Projects/ConnectToBuyers.PNG',
+      imageUrl: '/src/assets/Projects/ConnectToBuyers.PNG',
     },
     {
       title: 'BFX_Calculator',
@@ -50,7 +50,7 @@ export const techProjects = [
       technologies: ['React', 'TailwindCSS'],
       githubUrl: 'https://github.com/bankah-junior/BFX_Calculator.git',
       liveUrl: 'https://bfx-calculator.netlify.app/',
-      imageUrl: '../assets/Projects/bfx-calculator.png',
+      imageUrl: '/src/assets/Projects/bfx-calculator.png',
     },
     {
       title: 'GP',
@@ -58,7 +58,7 @@ export const techProjects = [
       technologies: ['React', 'TailwindCSS'],
       githubUrl: 'https://github.com/bankah-junior/ZapTek-Internship/tree/3.GP',
       liveUrl: 'https://digitalmarketers.netlify.app/',
-      imageUrl: '../assets/Projects/GP.png',
+      imageUrl: '/src/assets/Projects/GP.png',
     },
     {
       title: 'Techie',
@@ -66,7 +66,7 @@ export const techProjects = [
       technologies: ['Next.js', 'TailwindCSS'],
       githubUrl: 'https://github.com/bankah-junior/tech-site',
       liveUrl: 'https://techie-site.netlify.app/',
-      imageUrl: '../assets/Projects/Techie.png',
+      imageUrl: '/src/assets/Projects/Techie.png',
     }
   ];
   
@@ -97,18 +97,18 @@ export const techProjects = [
       title: 'Strategy Statistics',
       description: 'Statistics of my strategy',
       technologies: ['Technical', 'Sentimental', 'Fundamental'],
-      imageUrl: '../assets/Projects/Strategy.jpeg',
+      imageUrl: '/src/assets/Projects/Strategy.jpeg',
     },
     {
       title: 'Assets',
       description: 'Percentage of trades in each different asset and by asset family (forex, commodities, indices, stocks...), as well as the accumulated return in each one of them.',
       technologies: ['Technical', 'Sentimental', 'Fundamental'],
-      imageUrl: '../assets/Projects/Assets.jpeg',
+      imageUrl: '/src/assets/Projects/Assets.jpeg',
     },
     {
       title: 'Trading Session',
       description: 'Distribution of trades between Asian (00:00-09:00 GMT), European (09:00-16:00 GMT) and American (16:00-00:00 GMT) sessions, as well as the accumulated return in each one of them.',
       technologies: ['Technical', 'Sentimental', 'Fundamental'],
-      imageUrl: '../assets/Projects/TradingSession.jpeg',
+      imageUrl: '/src/assets/Projects/TradingSession.jpeg',
     },
   ];
