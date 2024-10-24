@@ -63,8 +63,8 @@ export const techProjects = [
       imageUrl: BreakEvenEA,
     },
     {
-      title: 'Trendline Expert Advisor',
-      description: "The Trendline Expert Advisor is an automated trading system that send notifications when price touches a drawn trendline on any chart and any timeframe. Notification can be sent through the terminal, mobile app or email.",
+      title: 'Trendline Alert Expert Advisor',
+      description: "The Trendline Alert Expert Advisor is an automated trading system that send notifications when price touches a drawn trendline on any chart and any timeframe. Notification can be sent through the terminal, mobile app or email.",
       technologies: ['MQL5'],
       liveUrl: 'mailto:anthonybekoebankah@gmail.com',
       imageUrl: TrendlineEA,
