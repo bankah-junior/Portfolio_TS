@@ -29,7 +29,7 @@ const TradeHistoryGallery: React.FC<TradeHistoryGalleryProps> = ({ images }) => 
 
   return (
     <div className="px-4 py-8 bg-gray-900">
-      <h2 className="text-2xl font-bold text-center text-white mb-8">
+      <h2 className="mb-8 text-2xl font-bold text-center text-white">
         Trade History Screenshots
       </h2>
 
@@ -38,7 +38,7 @@ const TradeHistoryGallery: React.FC<TradeHistoryGalleryProps> = ({ images }) => 
         {currentImages.map((image, index) => (
           <div key={index} className="relative">
             <div
-              className="rounded-lg overflow-hidden shadow-lg hover:scale-105 transform transition-transform duration-300 cursor-pointer"
+              className="overflow-hidden transition-transform duration-300 transform rounded-lg shadow-lg cursor-pointer hover:scale-105"
               onClick={() => setSelectedImage(image)} // Set selected image for full-screen view
             >
               <img
@@ -73,9 +73,9 @@ const TradeHistoryGallery: React.FC<TradeHistoryGalleryProps> = ({ images }) => 
       {/* Full-Screen Modal */}
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="relative max-w-xs sm:max-w-sm w-full p-4">
+          <div className="relative w-full max-w-xs p-4 sm:max-w-xm">
             <button
-              className="absolute top-4 right-4 text-white hover:text-gray-300 bg-black sm:p-2 border-2 rounded-md"
+              className="absolute text-white bg-black border-2 rounded-md top-4 right-4 hover:text-gray-300 sm:p-2"
               onClick={closeModal} // Close modal on click
             >
               <XIcon className="w-8 h-8" />
@@ -83,7 +83,7 @@ const TradeHistoryGallery: React.FC<TradeHistoryGalleryProps> = ({ images }) => 
             <img
               src={selectedImage}
               alt="Full screen trade history"
-              className="w-full h-full object-contain rounded-lg"
+              className="object-contain w-full h-full rounded-lg"
             />
           </div>
         </div>

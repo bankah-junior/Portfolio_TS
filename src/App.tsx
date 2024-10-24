@@ -105,11 +105,10 @@ function App() {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
-                currentSlide === index 
-                  ? 'opacity-20 scale-105' 
-                  : 'opacity-0 scale-100'
-              }`}
+              className={`absolute inset-0 transition-all duration-1000 ease-in-out ${currentSlide === index
+                ? 'opacity-20 scale-105'
+                : 'opacity-0 scale-100'
+                }`}
               style={{
                 backgroundImage: `url('${slide.url}')`,
                 backgroundSize: 'cover',
@@ -131,20 +130,19 @@ function App() {
                   <LineChart className="w-8 h-8 text-green-400" />
                 </div>
               </div>
-              
+
               <h1 className="mb-6 text-4xl font-bold text-transparent md:text-6xl bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
                 Anthony Bekoe Bankah
               </h1>
-              
+
               <div className="relative h-20 mb-8 overflow-hidden">
                 {slides.map((slide, index) => (
                   <div
                     key={index}
-                    className={`absolute w-full transition-all duration-500 transform ${
-                      currentSlide === index
-                        ? 'translate-y-0 opacity-100'
-                        : 'translate-y-full opacity-0'
-                    }`}
+                    className={`absolute w-full transition-all duration-500 transform ${currentSlide === index
+                      ? 'translate-y-0 opacity-100'
+                      : 'translate-y-full opacity-0'
+                      }`}
                   >
                     <h2 className="mb-2 text-2xl font-medium md:text-3xl">{slide.title}</h2>
                     <p className="text-gray-400">{slide.description}</p>
@@ -185,11 +183,10 @@ function App() {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    currentSlide === index
-                      ? 'bg-blue-500 w-8'
-                      : 'bg-gray-600 hover:bg-gray-500'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
+                    ? 'bg-blue-500 w-8'
+                    : 'bg-gray-600 hover:bg-gray-500'
+                    }`}
                 />
               ))}
             </div>
@@ -210,7 +207,7 @@ function App() {
               Combining software engineering excellence with financial market insights
             </p>
           </div>
-          
+
           <div className="grid gap-8 md:grid-cols-2">
             {techItems.map((item) => (
               <TechCard
@@ -236,7 +233,7 @@ function App() {
               )}
             </button>
           </div>
-          
+
           {showTechProjects && (
             <div className="mt-12 transition-all duration-500 transform">
               <ProjectsGrid projects={techProjects} />
@@ -316,12 +313,8 @@ function App() {
               )}
             </button>
           </div>
-          
-          {showFinanceProjects && (
-            <div className="mt-12 transition-all duration-500 transform">
-              <TradeHistoryGalleryCard />
-            </div>
-          )}
+
+          {showFinanceProjects && <TradeHistoryGalleryCard />}
         </div>
       </section>
 

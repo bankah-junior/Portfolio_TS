@@ -1,25 +1,27 @@
-import MindMeld from '/public/assets/Projects/MindMeld.png';
-import MyRecipe from '/public/assets/Projects/MyRecipe.png';
-import ConnectToBuyers from '/public/assets/Projects/ConnectToBuyers.png';
-import BfxCalculator from '/public/assets/Projects/bfx-calculator.png';
-import GP from '/public/assets/Projects/GP.png';
-import Techie from '/public/assets/Projects/Techie.png';
-import FashionWorld from '/public/assets/Projects/FashionWorld.png';
+import MindMeld from '/assets/Projects/MindMeld.png';
+import MyRecipe from '/assets/Projects/MyRecipe.png';
+import ConnectToBuyers from '/assets/Projects/ConnectToBuyers.png';
+import BfxCalculator from '/assets/Projects/bfx-calculator.png';
+import GP from '/assets/Projects/GP.png';
+import Techie from '/assets/Projects/Techie.png';
+import FashionWorld from '/assets/Projects/FashionWorld.png';
+import BreakEvenEA from '/assets/Projects/BreakEvenEA.jpeg';
+import TrendlineEA from '/assets/Projects/TrendlineEA.jpeg';
 
-import Trade01 from "/public/assets/Trades/Trade01.png";
-import Trade02 from "/public/assets/Trades/Trade02.png";
-import Trade03 from "/public/assets/Trades/Trade03.png";
-import Trade04 from "/public/assets/Trades/Trade04.png";
-import Trade05 from "/public/assets/Trades/Trade05.png";
-import Trade06 from "/public/assets/Trades/Trade06.png";
-import Trade07 from "/public/assets/Trades/Trade07.png";
-import Trade08 from "/public/assets/Trades/Trade08.png";
-import Trade09 from "/public/assets/Trades/Trade09.png";
-import Trade10 from "/public/assets/Trades/Trade10.png";
-import Trade11 from "/public/assets/Trades/Trade11.png";
-import Trade12 from "/public/assets/Trades/Trade12.png";
-import Trade13 from "/public/assets/Trades/Trade13.png";
-import Trade14 from "/public/assets/Trades/Trade14.png";
+import Trade01 from "/assets/Trades/Trade01.png";
+import Trade02 from "/assets/Trades/Trade02.png";
+import Trade03 from "/assets/Trades/Trade03.png";
+import Trade04 from "/assets/Trades/Trade04.png";
+import Trade05 from "/assets/Trades/Trade05.png";
+import Trade06 from "/assets/Trades/Trade06.png";
+import Trade07 from "/assets/Trades/Trade07.png";
+import Trade08 from "/assets/Trades/Trade08.png";
+import Trade09 from "/assets/Trades/Trade09.png";
+import Trade10 from "/assets/Trades/Trade10.png";
+import Trade11 from "/assets/Trades/Trade11.png";
+import Trade12 from "/assets/Trades/Trade12.png";
+import Trade13 from "/assets/Trades/Trade13.png";
+import Trade14 from "/assets/Trades/Trade14.png";
 
 export const techProjects = [
     {
@@ -54,6 +56,20 @@ export const techProjects = [
       imageUrl: BfxCalculator,
     },
     {
+      title: 'Breakeven Expert Advisor',
+      description: "The Breakeven Expert Advisor is an automated trading system that sets your stop loss to breakeven when a certain number of points are reached. It can be configured to work on any currency pair and has other filtering options.",
+      technologies: ['MQL5'],
+      liveUrl: 'mailto:anthonybekoebankah@gmail.com',
+      imageUrl: BreakEvenEA,
+    },
+    {
+      title: 'Trendline Expert Advisor',
+      description: "The Trendline Expert Advisor is an automated trading system that send notifications when price touches a drawn trendline on any chart and any timeframe. Notification can be sent through the terminal, mobile app or email.",
+      technologies: ['MQL5'],
+      liveUrl: 'mailto:anthonybekoebankah@gmail.com',
+      imageUrl: TrendlineEA,
+    },
+    {
       title: 'GP',
       description: "This website has been created to provide digital services for clients all over the world",
       technologies: ['React', 'TailwindCSS'],
@@ -84,19 +100,19 @@ export const techProjects = [
       title: 'Strategy Statistics',
       description: 'Statistics of my strategy',
       technologies: ['Technical', 'Sentimental', 'Fundamental'],
-      imageUrl: '/public/assets/Projects/Strategy.jpeg',
+      imageUrl: '/assets/Projects/Strategy.jpeg',
     },
     {
       title: 'Assets',
       description: 'Percentage of trades in each different asset and by asset family (forex, commodities, indices, stocks...), as well as the accumulated return in each one of them.',
       technologies: ['Technical', 'Sentimental', 'Fundamental'],
-      imageUrl: '/public/assets/Projects/Assets.jpeg',
+      imageUrl: '/assets/Projects/Assets.jpeg',
     },
     {
       title: 'Trading Session',
       description: 'Distribution of trades between Asian (00:00-09:00 GMT), European (09:00-16:00 GMT) and American (16:00-00:00 GMT) sessions, as well as the accumulated return in each one of them.',
       technologies: ['Technical', 'Sentimental', 'Fundamental'],
-      imageUrl: '/public/assets/Projects/TradingSession.jpeg',
+      imageUrl: '/assets/Projects/TradingSession.jpeg',
     },
   ];
 
